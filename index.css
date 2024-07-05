@@ -1,0 +1,242 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header, footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  margin-top: auto;
+}
+
+header h1, footer p {
+  margin: 0;
+}
+
+.fancy-title {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 36px;
+  color: #ff69b4;
+  text-shadow: 2px 2px rgb(213, 147, 24);
+}
+
+.container {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.main-title {
+  font-size: 32px;
+  color: #008000;
+}
+
+.welcome-text {
+  font-size: 18px;
+  color: #0000ff;
+}
+
+.styled-input, .styled-select {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 7px;
+  border: 2px solid #0000ff;
+  border-radius: 5px;
+  box-shadow: 3px 3px #ffa500;
+}
+
+.styled-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 3px 3px #0000ff;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.styled-button:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+
+.styled-link {
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: background-color 0.3s, transform 0.3s;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #0000ff;
+  text-decoration: none;
+  padding: 10px;
+  border: 2px solid #ff69b4;
+  border-radius: 5px;
+  box-shadow: 3px 3px #ffa500;
+  margin-left: 70%;
+}
+
+.styled-link:hover {
+  background-color: #ff69b4;
+  color: white;
+  transform: scale(1.1);
+}
+
+.definition-container {
+  border: 3px solid #ff4500;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #fffacd;
+  box-shadow: 5px 5px #ffa500;
+}
+
+.definition-container h4 {
+  margin: 0;
+  font-size: 20px;
+  color: #ff4500;
+}
+
+.definition-container li {
+  margin: 5px 0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 5px 5px #ffa500;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.save-definition-btn {
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 3px 3px #0000ff;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.save-definition-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  border: 2px solid #0000ff;
+  padding: 10px;
+  box-shadow: 3px 3px #ffa500;
+}
+
+.note-content {
+  white-space: pre-wrap;
+}
+
+.note-cell {
+  position: relative;
+}
+
+.note-textarea,
+.save-note-btn {
+  display: none;
+}
+
+.note-textarea {
+  width: 100%;
+  height: 60px;
+}
+
+.save-note-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 5px;
+  border-radius: 5px;
+  box-shadow: 3px 3px #0000ff;
+}
+
+.save-note-btn:hover {
+  background-color: #45a049;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.grid-item {
+  padding: 10px;
+  border: 2px solid #ff69b4;
+  border-radius: 10px;
+  background-color: #fffacd;
+  box-shadow: 3px 3px #ffa500;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+  background-color: #ffebcd;
+}

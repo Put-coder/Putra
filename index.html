@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World!</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body background="background.jpg">
+  <header>
+    <h1 class="fancy-title">✨Word4U.✨</h1>
+  </header>
+
+  <div class="container">
+    <h1 class="main-title">Hello World!👋</h1>
+    <p class="welcome-text">Welcome to Word4U. 🎓
+      <br>The website is a learning tool that allows users to explore and save new words along with their meanings and examples, helping users to expand their vocabulary effectively. </p>
+    
+    <!-- Input field for entering a word -->
+    <input type="text" id="word" placeholder="Enter word" class="styled-input">
+    
+    <!-- Dropdown to select the part of speech -->
+    <select id="part-of-speech" class="styled-select">
+      <option value="">Select a part of speech</option>
+      <option value="noun">Noun</option>
+      <option value="verb">Verb</option>
+      <option value="adjective">Adjective</option>
+      <option value="adverb">Adverb</option>
+      <option value="pronoun">Pronoun</option>
+      <option value="preposition">Preposition</option>
+      <option value="conjunction">Conjunction</option>
+      <option value="interjection">Interjection</option>
+    </select>
+    
+    <!-- Button to fetch the definition of the entered word -->
+    <button onclick="buttonClicked()" class="styled-button">🔍 Enter</button>
+    
+    <!-- Elements to display the fetched data -->
+    <p id="displayWord" class="centered-word"></p>
+    <p id="displaySounds"></p><br>
+    <div id="displayDefinition"></div><br>
+    <p id="displayRelatedURL"></p>
+
+    <!-- Section for generating random words -->
+    <h2 class="main-title">Generate Random Word🎲</h2>
+    <button onclick="generateRandomWords()" class="styled-button">Generate Random Words</button>
+    <div id="random-words" class="grid-container"></div>
+  </div>
+  
+  <!-- Link to the Word of the Day page -->
+  <a href="wotd.html" target="_blank" class="styled-link">📚 Word of the Day</a>
+
+  <!-- Modal for saving notes -->
+  <div id="noteModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <label for="noteInput">📝 Enter a note:</label>
+      <textarea id="noteInput" rows="4"></textarea>
+      <button id="saveNoteBtn" class="styled-button">✅ Save Note</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Word4U</p>
+  </footer>
+
+  <!-- Script files -->
+  <script src="main1.js"></script>
+  <script src="random-word-generator.js"></script>
+</body>
+</html>
